@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anime Survey Form</title>
+    <style>
+    body{
+  margin:0;
+  background:url("http://getwallpapers.com/wallpaper/full/1/9/3/861434-top-anime-background-1920x1080-xiaomi.jpg") no-repeat;
+  background-size:100% 100%;
+}
+h1{
+  margin-top:25px;
+}
+h1,p{
+  text-align:center;
+  color:white;
+  font-family:Times New Roman;
+  margin-bottom:0px;
+}
+label,textarea{
+  display:block;
+  font-size:18px;
+}
+form{
+  margin:0 auto;
+  max-width:600px;
+  min-width:300px;
+  background-color:rgb(160,200,255,0.75);
+  border-radius:5px;
+}
+input,select,textarea{
+  width:100%;
+  
+}
+input[type="radio"],input[type="checkbox"]{
+width:unset;
+}
+fieldset{
+  border:0px;
+  margin-bottom:2px;
+
+}
+input[type="text"],input[type="email"],input[type="number"],select{
+  border-radius:4px;
+  border:1px solid black;
+  height:5vh;
+  font-size:15px;
+}
+input[type="submit"]{
+  margin:0 auto;
+  padding:5px;
+  width:100%;
+  font-size:18px;
+  color:white;
+  border:2px solid black;
+  background-color:#009f00;
+  cursor:pointer;
+}
+input[type="submit"]:hover{
+  background-color:#005900;
+}
+.last{
+  margin-bottom:25px;
+}
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Anime Survey Form</h1>
+    <p id="description" style="font-size:18px"><i>Thank you for taking the time to help us provide with the info</i></p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter Full Name"required/></label>
+        <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="example@email.com"required/></label>
+        <label for="number" id="number-label">Age(optional): <input type="number" id="number"  min="16"
+        max="82"placeholder="age"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Which anime would you recommend to others(if asked)? :  
+          <select id="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="Naruto">Naruto</option>
+            <option value="One Piece">One Piece</option>
+            <option value="Bleach">Bleach</option>
+            <option value="Attack On Titan">Attack On Titan</option>
+            <option value="Full Metal Alchemist:Brotherhood">Full Metal Alchemist Brotherhood</option> 
+            <option value="Spy X Family">Spy X Family</option>
+            <option value="Demon Slayer">Demon Slayer</option>
+            <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+            <option value="Blue Lock">Blue Lock</option>
+            <option value="Death Note">Death Note</option>
+            <option value="Haikyuu">Haikyuu</option>
+            <option value="Chainsaw Man">Chainsaw Man</option>
+            <option value="Hell's Paradise">Hell's Paradise</option>
+            <option value="Your Lie In April">Your Lie In April</option>
+            <option value="Suzume No Tojimari">Suzume No Tojimari</option>
+            <option value="Tokyo Ghoul">Tokyo Ghoul</option>
+            <option value="Tokyo Revengers">Tokyo Revengers</option>
+            <option value="Your Name">Your Name</option>
+            <option value="A Silent Voice">A Silent Voice</option>
+            <option value="I want to Eat Your Pancreas">I want to Eat Your Pancreas</option>
+            <option value="Dragon Ball Z">Dragon Ball Z</option>
+            <option value="One Punch Man">One Punch Man</option>
+            <option value="Pokemon">Pokemon</option>
+            <option value="Zom 100:Bucketlist of the Dead">Zom 100:Bucket List of the Dead</option>
+            <option value="Terror in Resonance">Terror in Resonance</option>
+            <option value="Death Parade">Death Parade</option>
+            <option value="Black Clover">Black Clover</option>
+            <option value="My Hero Academia">My Hero Academia</option>
+            <option value="Dr. Stone">Dr.Stone</option>
+          </select>
+        </label>
+        <br>
+        <label>You are a : </label>
+          <label><input type="radio" name="gender" value="Male"/>Male</label>
+          <label><input type="radio" name="gender" value="Female"/>Female</label>
+          <label><input type="radio" name="gender" value="Other">Other</label>
+      </fieldset>
+      <fieldset>
+        <label>Which type of genre do you like? :</label>
+        <label><input type="checkbox" value="Dark"/>Dark</label>
+        <label><input type="checkbox" value="Gore"/>Gore</label>
+        <label><input type="checkbox" value="Action"/>Action</label>
+        <label><input type="checkbox" value="Slice of Life"/>Slice of Life</label>
+        <label><input type="checkbox" value="Isekai"/>Isekai</label>
+        <label><input type="checkbox"value="Comedy"/>Comedy</label>
+        <label><input type="checkbox"value="Romantic"/>Romantic</label>
+        <label><input type="checkbox"value="Romcom"/>Romcom</label>
+        <br>
+        <label>Any Suggestions? : 
+          <textarea rows="3" placeholder="(optional)"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="last">
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
